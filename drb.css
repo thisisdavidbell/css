@@ -12,12 +12,40 @@
 
 .hoverover2 {
   color: lightgreen;
+  display: inline-block;
 }
 
 .textappear2 {
   visibility: hidden;
 }
 
+.hoverover2:hover {
+  background-color: grey;
+}
+
 .hoverover2:hover + .textappear2 {
+  visibility: visible;
+}
+
+.hoverover3 {
+  color: blue;
+}
+
+.textappear3 {
+  visibility: hidden;
+  border: 2px;
+  border-radius: 5px;
+  border-color: slateblue;
+  border-style: solid;
+  padding: 5px;
+  background-color: lightblue;
+  color: black;
+  position: relative;
+  left: 10px;
+  top: -60px;
+  display: inline-block;
+}
+
+.hoverover3:hover ~ .textappear3 {
   visibility: visible;
 }

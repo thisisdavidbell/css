@@ -3,11 +3,32 @@
     <link rel="stylesheet" href="./drb.css">
   </head>
   <body>
+
+    You can only control one element from another if they are sibling elements with the hover area first, or if the hover area is the parent.
+    <br>However, with position relative you can place affected element wherever you want.
+<p>
     <div class="hoverover">I am some text
       <div class="textappear">I only appear when you hover over the above text</div>
     </div>
+<p>
+    <div class="hoverover2">I am some text2</div>
+    <div class="textappear2">I only appear when you hover over the above text2 due to the + (adjacent sibling combinator)</div>
+<p>
+    <div class="hoverover2">I am some text22</div>
+    <div>Im between the other 2 divs so the + (adjacent sibling combinator) its not the next item.</div>
+    <div class="textappear2">I only appear when you hover over the above text22</div>
+<p>
 
-    <div class="hoverover2">I am some text</div>
-    <div class="textappear2">I only appear when you hover over the above text</div>
+    <div class="hoverover3">I am some text3</div>
+    <div>Im between the other 2 divs so its not the next item, but with ~ (sibling combinator doesnt have to be adjacent).</div>
+    <div class="textappear3">I only appear when you hover over the above text23</div>
+<p>
+    <div>
+       <div class="textappear3">I dont appear as Im above the hoverover3 element</div>
+       <div class="hoverover3">I am some text3</div>
+       <div class="textappear3">I only appear when you hover over the above text23</div>
+  </div>
+
+
   </body>
 </html>
