@@ -1,0 +1,23 @@
+.hoverover {
+  color: red;
+}
+
+.textappear {
+  visibility: hidden;
+}
+
+.hoverover:hover .textappear {
+  visibility: visible;
+}
+
+.hoverover2 {
+  color: lightgreen;
+}
+
+.textappear2 {
+  visibility: hidden;
+}
+
+.hoverover2:hover + .textappear2 {
+  visibility: visible;
+}
